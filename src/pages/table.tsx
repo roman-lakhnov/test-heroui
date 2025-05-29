@@ -74,16 +74,16 @@ export default function TablePage() {
                   Id
                 </th>
                 <th className="w-4/12  px-2 py-3 " scope="col">
-                  Назва
+                  Name
                 </th>
                 <th className="w-4/12 px-2 py-3 " scope="col">
-                  Картинка
+                  Image
                 </th>
                 <th
                   className="w-2/12 lg:w-1/12 px-2 py-3 text-center"
                   scope="col"
                 >
-                  Кількість лайків
+                  Number of Likes
                 </th>
                 <th
                   className="w-4/12 lg:w-1/12  px-2 py-3 text-center "
@@ -118,7 +118,7 @@ export default function TablePage() {
               {(onClose) => (
                 <>
                   <ModalHeader className="flex flex-col gap-1">
-                    Редагувати властивості мема
+                    Edit Meme Properties
                   </ModalHeader>
                   <ModalBody>
                     <div className="space-y-2">
@@ -150,7 +150,7 @@ export default function TablePage() {
                         className="block text-sm font-medium text-gray-700"
                         htmlFor="name"
                       >
-                        Назва
+                        Name
                       </label>
                       <Input
                         required
@@ -173,7 +173,7 @@ export default function TablePage() {
                         className="block text-sm font-medium text-gray-700"
                         htmlFor="imageUrl"
                       >
-                        Картинка (URL)
+                        Image (URL)
                       </label>
                       <Input
                         required
@@ -195,7 +195,7 @@ export default function TablePage() {
                         className="block text-sm font-medium text-gray-700"
                         htmlFor="likes"
                       >
-                        Кількість лайків
+                        Number of Likes
                       </label>
                       <Input
                         required
@@ -223,7 +223,7 @@ export default function TablePage() {
                       disabled={!isValidMeme(currentMeme)}
                       onPress={handleSave}
                     >
-                      Зберегти
+                      Save
                     </Button>
                   </ModalFooter>
                 </>

@@ -1,50 +1,49 @@
-# Vite & HeroUI Template
+# Hero UI Meme Gallery
 
-This is a template for creating applications using Vite and HeroUI (v2).
+This project is a simple web application built with
+[Hero UI](https://www.heroui.com/) components and React to display and manage a
+collection of memes.
 
-[Try it on CodeSandbox](https://githubbox.com/frontio-ai/vite-template)
+## Features
+
+- **Meme Table View**: View memes in a tabular format with ID, name, image URL
+  and like count
+- **Meme Gallery View**: Browse memes in a card-based gallery layout
+- **Edit Functionality**: Modify meme properties through a modal interface
+- **Data Persistence**: Changes are saved to browser cookies for persistent
+  storage
+- **Responsive Design**: Works on both desktop and mobile devices
 
 ## Technologies Used
 
-- [Vite](https://vitejs.dev/guide/)
-- [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
+- React with TypeScript
+- Vite for fast build and development
+- Hero UI component library
+- React Router for navigation
+- Browser cookies for data storage
 
-## How to Use
+## Project Structure
 
-To clone the project, run the following command:
+- `/src/pages`: Contains main page components
+  - `table.tsx`: Editable tabular view of memes
+  - `list.tsx`: Card-based gallery view of memes
+- `/src/layouts`: Layout components
+- `/src/config`: Configuration and utility functions
 
-```bash
-git clone https://github.com/frontio-ai/vite-template.git
-```
+## Validation
 
-### Install dependencies
+The app includes validation for meme properties:
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+- Names must be between 3 and 100 characters
+- Image URLs must be valid and end with .jpg
+- Like counts must be integers between 0 and 99
 
-```bash
-npm install
-```
+## Getting Started
 
-### Run the development server
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Start the development server with `npm run dev`
+4. Navigate between table and gallery views using the navigation links
 
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/frontio-ai/vite-template/blob/main/LICENSE).
+This project demonstrates the practical use of Hero UI components for building
+modern, responsive React applications.
